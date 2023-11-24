@@ -1,5 +1,7 @@
+/* eslint-disable react/no-children-prop */
 import React from 'react';
 import Image from 'next/image';
+import BlueButton from './botao';
 
 const toursData = [
   {
@@ -39,6 +41,10 @@ const ToursList = () => {
             <div className="p-4">
               <h2 className="text-lg font-semibold">{tour.title}</h2>
               <p className="text-gray-600">{tour.description}</p>
+              <br></br><br></br>
+              <BlueButton onClick={function (event: React.MouseEvent<HTMLButtonElement, MouseEvent>): void {
+                throw new Error('Function not implemented.');
+              } } children={'undefined'}/>
             </div>
           </div>
         </div>

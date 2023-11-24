@@ -6,13 +6,7 @@ const PasseiosNauticos = () => {
       <h2 className="text-2xl font-bold mb-4">
         Descubra as Maravilhas Náuticas de Alagoas! 🚤☀️
       </h2>
-      <p className="text-lg mb-6">
-        Embarque em uma jornada única com nossa empresa de passeios náuticos,
-        explorando as águas cristalinas da Lagoa Mundaú e as praias deslumbrantes
-        ao redor, como Prainha, Praia do Saco e Praia do Francês. Oferecemos
-        experiências exclusivas a bordo de nossos barcos, proporcionando diárias
-        emocionantes para até 6 pessoas.
-      </p>
+    
     
       {/* Barco Exclusivo */}
       <div className="mb-6">

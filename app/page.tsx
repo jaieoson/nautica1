@@ -16,13 +16,13 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="bg-blue-500 p-4">
+    <nav className="bg-blue-500 ">
         <div className="container mx-auto flex justify-between items-center">
           
         <div className="relative w-100 h-120">
         <a href="/" className="text-white text-2xl font-bold">
               <Image  className="w-full h-62 object-cover object-center"
-                src={'/BomBordo.png'} width={50} height={50} alt={'passeios naúticos alagoas'} ></Image>
+                src={'/BomBordo.png'} width={70} height={70} alt={'passeios naúticos alagoas'} ></Image>
         </a>
           </div>
           
@@ -68,7 +68,7 @@ const Navbar = () => {
             isOpen ? 'block' : 'hidden'
           } lg:flex lg:items-center lg:w-auto`}
         >
-          <div className="text-lg lg:flex-grow">
+          <div className="text-lg lg:flex-grow p-4">
             <a
               href="#"
               className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4"
