@@ -15,7 +15,7 @@ const toursData = [
     id: 2,
     title: 'Passeio de Buggy',
     description: 'Passeio pelas praias de Muro Alto, Cupê, Porto de Galinhas, Maracaípe e Pontal de Maracaípe. Fotos inclusas e ilimitadas durante todo o trajeto do buggy.',
-    imageUrl: '/b2.jfif',
+    imageUrl: '/b3.jfif',
   },
   {
     id: 3,
