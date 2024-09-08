@@ -1,10 +1,11 @@
 "use client";
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
-import PasseiosNauticos from './components/passeio';
+import PasseiosTexto from './components/passeio';
 import ToursList from './components/tourList';
 import Footer from './components/footer';
-
+import BackgroundVideo from './components/BackgroundVideo';
 
 
 const Navbar = () => {
@@ -16,13 +17,13 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="bg-blue-500 ">
+    <nav className="bg-[#3155A4] border-solid border-b-8">
         <div className="container mx-auto flex justify-between items-center">
           
         <div className="relative w-100 h-120">
         <a href="/" className="text-white text-2xl font-bold">
               <Image  className="w-full h-62 object-cover object-center"
-                src={'/BomBordo.png'} width={70} height={70} alt={'passeios naúticos alagoas'} ></Image>
+                src={'/BomBordo.png'} width={70} height={70} alt={'Passeios Porto de galinhas'} ></Image>
         </a>
           </div>
           
@@ -73,27 +74,46 @@ const Navbar = () => {
               href="#"
               className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4"
             >
-              Home
+              Nós
             </a>
             <a
               href="#"
               className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500 mr-4"
             >
-              Tours
+              Pesseios
             </a>
-            <a
-              href="#"
-              className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-500"
-            >
-              Contact
-            </a>
+         
+              
+              <Link aria-label="Chat on WhatsApp" href={"https://wa.me/5581996146853"} target="_blank"  passHref>
+              
+              Whats
+           </Link>
           </div>
         </div>
       </div>
     </nav>
+     
 
+<BackgroundVideo />
+      <div className="content">
+        <h1>BEM VINDO A BORDO!</h1>
+        <p className="passeios">PASSEIOS EM PORTO DE GALINHAS.</p>
+      </div>
+      <style jsx>{`
+        .content {
+          position: relative;
+          z-index: 1;
+          color: white;
+          text-align: center;
+          padding-top: 50vh;
+        }
+        .passeios{
+          margin-top:-315px;
+          font-size:4em;
+        }
+      `}</style>
 
-      <PasseiosNauticos />
+      <PasseiosTexto />
       <ToursList />
       <Footer/>
     

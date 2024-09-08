@@ -1,19 +1,19 @@
 import React from 'react';
 
-const PasseiosNauticos = () => {
+const PasseiosTexto = () => {
   return (
     <div className="bg-blue-100 p-8 rounded-md shadow-md">
       <h2 className="text-2xl font-bold mb-4">
-        Descubra as Maravilhas Náuticas de Alagoas! 🚤☀️
+        Passeios em Porto de Galinhas. Reserve conosco: Passeio de Buggy, Mergulho com cilindro, voo paramotor🌴☀️
       </h2>
     
     
-      {/* Barco Exclusivo */}
+      {/* Barco Exclusivo }
       <div className="mb-6">
         <h3 className="text-xl font-bold mb-4">Barco Exclusivo para 6 Pessoas:</h3>
         <p>Desfrute de um dia incrível com amigos ou familiares...</p>
       </div>
-      {/* Reserva */}
+      {/* Reserva }
       <div>
         <p>
           Seja para apreciar a vista panorâmica da Lagoa Mundaú ou relaxar nas
@@ -25,8 +25,10 @@ const PasseiosNauticos = () => {
           Viva a Magia dos Passeios Náuticos em Alagoas! 🌴
         </p>
       </div>
+       */}
     </div>
+   
   );
 };
 
-export default PasseiosNauticos;
+export default PasseiosTexto;
